@@ -5,26 +5,28 @@
 }
 
 <h2>Enrollment Statistics</h2>
-
-<table class="table table-bordered table-striped table-hover">
-    <tr class="bg-light text-dark">
-        <th>
-            Enrollment Date
-        </th>
-        <th>
-            Students
-        </th>
-    </tr>
-
-    @foreach (var item in Model)
-    {
-        <tr>
-            <td>
-                @Html.DisplayFor(modelItem => item.EnrollmentDate)
-            </td>
-            <td>
-                @item.StudentCount
-            </td>
+<br />
+<dd class="col-sm-5">
+    <table class=" table table-bordered table-striped table-hover">
+        <tr class="bg-light text-dark">
+            <th>
+                Enrollment Date
+            </th>
+            <th>
+                Students
+            </th>
         </tr>
-    }
-</table>
+
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.EnrollmentDate)
+                </td>
+                <td>
+                    @item.StudentCount
+                </td>
+            </tr>
+        }
+    </table>
+</dd>
