@@ -26,6 +26,9 @@ namespace ASP_MVC_Contoso
                 try
                 {
                     var context = services.GetRequiredService<ApplicationDbContext>();
+                    
+                    ///context.Database.EnsureCreated();
+
                     DbInitialiser.Initialize(context);
                 }
                 catch (Exception ex)

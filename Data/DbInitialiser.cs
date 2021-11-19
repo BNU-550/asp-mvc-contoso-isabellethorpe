@@ -10,6 +10,8 @@ namespace ASP_MVC_Contoso.Data
     {
         public static void Initialize(ApplicationDbContext context)
         {
+            context.Database.EnsureCreated();
+
             // Look for any students.
             if (context.Students.Any())
             {
