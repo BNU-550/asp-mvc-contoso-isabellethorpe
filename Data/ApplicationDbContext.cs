@@ -1,5 +1,5 @@
 ﻿using ASP_MVC_Contoso.Models;
-using ContosoUniversity.Models;
+//using ContosoUniversity.Models;
 using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 using System;
